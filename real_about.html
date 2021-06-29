@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positive Transformation | About</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="font-awesome.min.css"> -->
+        <style>
+        section.bkimage{
+            height: 220vh;
+            background-position: center;
+            background-size: cover;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="scrollBarPath"></div>
+        <div id="progressBar"></div>
+        <section class="bkimage">
+        <header>
+            <div class="main">
+                <div class="logo">
+                    <img src="positive transfromation _dietpng-01.png">
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="real_about.html">About</a></li>
+                    <li><a href="about.html">Story</a></li>
+                    <li><A href="extra.html">Extra</A></li>
+                    <li><a href="pay.html">Pay</a></li>
+                    <!-- <li><a href="post.html">Post</a></li>
+                    <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+            </div>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="main">
+            <div class="container">
+        <article id="main-col">
+            <h1 class="page-title">About Us</h1>
+        <aside id="sidebar">
+        <div class="darc1">
+            <h1>Mission</h1>
+            <hr />
+            <p>Positive Transformation - Nourish your Body with Healthy food and your Soul with Yoga
+            </p>
+        </div>
+        <div class="darc2">
+            <h1>Almamatter</h1>
+            <hr />
+            <p>MA in Yog Science, Trained from Bhartiya Vidya Bhawan,
+                Certified Yoga Teacher from The Yog Guru
+                Dietitian</p>
+        </div>
+        <div class="darc1">
+            <h1>Awards</h1>
+            <hr />
+            <p>Felicitated by Cloudnine Hospital as "Super Woman" for making positive contribution to self and society
+            </p>
+        </div>
+        <div class="darc2">
+            <h1>Services</h1>
+            <hr />
+            <p>Hatha/ Vinayasa Yoga , Kids Yoga, Meditation, Stress Management , Restorative Flow , Pregnancy Yoga , Dietitian.
+            </p>
+        </div>
+        </aside>
+        </section>
+        </section>
+        <footer>
+            <p>Positive Transformation, Copyrights &copy; 2020</p>
+        </footer>
+        <script>
+            let progress = document.getElementById('progressBar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function() {
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
+    </body>
+</html>

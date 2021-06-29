@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positive Transformation | Pay</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+
+            center{
+                margin:100px;
+                color: aquamarine;
+            }
+            input{
+                margin:20px;
+                border: 5px solid darkgoldenrod;
+                background-color: transparent;
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="progressBar"></div>
+        <div id="scrollBarPath"></div>
+        <!-- <bg-image src="background.jfif"> -->
+        <section class="bkimage">
+        <header>
+            <div class="main">
+                <div class="logo">
+                    <img src="positive transfromation _dietpng-01.png">
+                    <!-- <P>By Deepali Maheshwary</P> -->
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="real_about.html">About</a></li>
+                    <li><a href="about.html">Story</a></li>
+                    <li><A href="extra.html">Extra</A></li>
+                    <li class="active"><a href="pay.html">Pay</a></li>
+                    <!-- <li><a href="post.html">Post</a></li>
+                    <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+            </div>
+        </header>
+        <center>
+            <div class="mainhead"><h1 class="mainh">Welcome to Payment</h1><br><h2 class="secondaryh">Here you can pay your fees</h2></div>
+            <form class="main">
+                Firstname: <input type="text" placeholder="Your nice first name..." !important><br>
+                Lastname:  <input type="text" placeholder="Your nice last name..." !important><br>
+                Credit card number:  <input type="number" placeholder="Credit Card Number..."!important>
+                CVV:  <input type="number" placeholder="CVV..." !important><br>    
+                <button onclick="payment()" type="submit">Pay...</button>
+            </form>   
+        </center>
+    </section>
+        <footer>
+            <p>Positive Transformation, Copyrights &copy; 2020</p>
+        </footer>
+        <script>
+            let progress = document.getElementById('progressBar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function() {
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+            
+        </script>
+    </body>
+</html>
